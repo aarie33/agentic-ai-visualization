@@ -1,0 +1,22 @@
+{
+  "name": "virtual-office",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "dev:service": "npm run dev -w @virtual-office/agent-service",
+    "dev:visualizer": "npm run dev -w @virtual-office/visualizer"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "@types/node": "^22.0.0"
+  },
+  "overrides": {
+    "@types/three": "0.186.0"
+  }
+}

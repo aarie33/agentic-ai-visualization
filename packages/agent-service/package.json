@@ -1,0 +1,18 @@
+{
+  "name": "@virtual-office/agent-service",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "@virtual-office/shared": "*",
+    "hono": "^4.6.0"
+  },
+  "devDependencies": { "tsx": "^4.19.0" }
+}
